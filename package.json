@@ -1,0 +1,36 @@
+{
+  "name": "demo02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "client:dev": "scripty",
+    "client:prod": "scripty",
+    "client:server": "scripty",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@swc/core": "^1.10.3",
+    "@swc/helpers": "^0.5.15",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "html-webpack-plugin": "^5.6.3",
+    "node-notifier": "^10.0.1",
+    "scripty": "^2.1.1",
+    "swc-loader": "^0.2.6",
+    "webpack": "^5.97.1",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0",
+    "yargs-parser": "^21.1.1"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.28.1"
+  }
+}
