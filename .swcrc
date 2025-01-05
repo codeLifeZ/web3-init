@@ -1,31 +1,31 @@
 {
-    // "module": {
-    //     "type": "es6", // 指定模块类型为 ES6
-    //     "ignoreDynamic": true // 忽略动态导入
-    // },
-    "minify": true,
-    "jsc": {
-        "parser": {
-            "syntax": "typescript", // 使用 TypeScript 语法
-            "tsx": true, // 启用 TSX 文件解析
-            "dynamicImport": true, // 允许动态导入
-            "decorators": true // 启用装饰器
-        },
-        "transform": {
-            "legacyDecorator": true, // 使用旧版装饰器语法
-            "decoratorMetadata": true, // 生成装饰器元数据
-            "react": {
-                "runtime": "automatic", // 自动导入 JSX 运行时
-                "throwIfNamespace": true, // 如果使用命名空间则抛出错误
-                "useBuiltins": true // 使用内置的 React 函数
-                // "pragma": "React.createElement", // 自定义 JSX pragma
-                // "pragmaFrag": "React.Fragment", // 自定义 JSX 片段 pragma
-                // "importSource": "react", // 自定义 JSX 导入源
-            }
-        },
-        "target": "es2015", // 将代码转换为 ES5
-        "loose": true, // 启用宽松转换
-        "externalHelpers": true, // 使用外部帮助函数
-        "keepClassNames": false, // 保留类名
-    }
+  // "module": {
+  //     "type": "es6", // 指定模块类型为 ES6
+  //     "ignoreDynamic": true // 忽略动态导入
+  // },
+  "minify": true,
+  "jsc": {
+    "parser": {
+      "syntax": "typescript", // 使用 TypeScript 语法
+      "tsx": true, // 启用 TSX 文件解析
+      "dynamicImport": true, // 允许动态导入
+      "decorators": true // 启用装饰器
+    },
+    "transform": {
+      "legacyDecorator": true, // 使用旧版装饰器语法
+      "decoratorMetadata": true, // 生成装饰器元数据
+      "react": {
+        "runtime": "automatic", // 自动导入 JSX 运行时
+        "throwIfNamespace": true, // 如果使用命名空间则抛出错误
+        "useBuiltins": true // 使用内置的 React 函数
+        // "pragma": "React.createElement", // 自定义 JSX pragma
+        // "pragmaFrag": "React.Fragment", // 自定义 JSX 片段 pragma
+        // "importSource": "react", // 自定义 JSX 导入源
+      }
+    },
+    "target": "es2015", // 将代码转换为 ES5
+    "loose": true, // 启用宽松转换
+    "externalHelpers": true, // 使用外部帮助函数
+    "keepClassNames": false // 保留类名
+  }
 }
