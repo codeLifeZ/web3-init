@@ -39,14 +39,18 @@ export const Accounts = ({
 
   return (
     <div>
+      {process.env.HOST}
       {accounts?.length === 0
         ? 'None'
         : accounts?.map((account, index) => (
+            // <div key={index}>fdsfs</div>
             <div key={index}>
               {ensNames[index] ?? account}
-              {balances ? `: ${formatEther(balances[index].toHexString())} ETH` : null}
+              {process.env.NODE_ENV}
+              {/* {balances ? `: ${formatEther(balances[index].toHexString())} ETH` : null} */}
             </div>
           ))}
     </div>
+    // <div>fdsfs</div>
   )
 }

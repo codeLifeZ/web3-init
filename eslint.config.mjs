@@ -16,7 +16,8 @@ export default [
       'react/react-in-jsx-scope': 'off',
       'no-unused-vars': 'warn',
       '@typescript-eslint/no-unused-vars': 'warn',
-      '@typescript-eslint/no-require-imports': 'off'
+      '@typescript-eslint/no-require-imports': 'off',
+      'func-style': ['error', 'declaration', { allowArrowFunctions: true }]
     }
   }
 ]

@@ -3,6 +3,8 @@ const merge = require('webpack-merge')
 const argv = require('yargs-parser')(process.argv.slice(2))
 const _mode = argv.mode || 'production'
 const _mergeConfig = require(`./config/webpack.config.${_mode}`)
+const DotEvn = require('dotenv-webpack')
+require('dotenv').config()
 const webpackBaseConfig = {
   entry: {
     name: resolve('src/index.tsx')
@@ -37,7 +39,8 @@ const webpackBaseConfig = {
         type: 'asset'
       }
     ]
-  }
+  },
+  plugins: [new DotEvn()]
 }
 
 module.exports = merge.default(webpackBaseConfig, _mergeConfig)

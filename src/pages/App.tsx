@@ -1,9 +1,8 @@
+import { MetaMaskCard } from '../components/MetaMaskCard'
+
 const App: React.FC = () => {
-  return (
-    <div>
-      <h1>Hello, World!react+webpack</h1>
-    </div>
-  )
+  return <MetaMaskCard />
+  // return <div>hello</div>
 }
 
 export default App
