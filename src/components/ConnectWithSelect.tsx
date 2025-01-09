@@ -11,7 +11,7 @@ const ChainSelect = ({
 }: {
   activeChainId: number
   switchChain: (chainId: number) => void
-  chainIds: number[]
+  chainIds?: number[]
 }) => {
   return (
     <select
@@ -24,7 +24,7 @@ const ChainSelect = ({
         Select chain
       </option>
       <option value={-1}>Default</option>
-      {chainIds.map((chainId) => (
+      {(chainIds || Object.keys(CHAINS)).map((chainId: any) => (
         <option key={chainId} value={chainId}>
           {CHAINS[chainId]?.name ?? chainId}
         </option>
@@ -80,6 +80,11 @@ export const ConnectWithSelect = ({
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       <div style={{ marginBottom: '1rem' }}>
+        <ChainSelect
+          activeChainId={desiredChainId}
+          switchChain={switchChain}
+          chainIds={chainIds as number[]}
+        />
         {isActive ? (
           error ? (
             <button onClick={() => switchChain(desiredChainId)}>Try again</button>

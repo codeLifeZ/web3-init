@@ -40,6 +40,7 @@
     "@ethersproject/bignumber": "^5.7.0",
     "@web3-react/core": "^8.2.3",
     "@web3-react/metamask": "^8.2.4",
+    "@web3-react/walletconnect": "^8.2.3",
     "ethers": "^6.13.4",
     "immer": "^10.1.1",
     "jotai": "^2.11.0",
